@@ -46,7 +46,7 @@ cmd-shift-left = 'move left'
 cmd-shift-down = 'move down'
 cmd-shift-up = 'move up'
 cmd-shift-right = 'move right'
-alt-cmd = 'move-node-to-monitor --wrap-around next'
+alt-cmd-right = 'move-node-to-monitor --wrap-around next'
 ctrl-cmd-b = 'balance-sizes'
 cmd-1 = 'workspace --auto-back-and-forth 1'
 cmd-2 = 'workspace --auto-back-and-forth 2'
@@ -74,6 +74,10 @@ alt-shift-minus = 'move-node-to-workspace 11'
 alt-shift-equal = 'move-node-to-workspace 12'
 cmd-tab = 'workspace-back-and-forth'
 cmd-shift-s = 'mode service'
+
+[workspace-to-monitor-force-assignment]
+11 = 'secondary'
+12 = 'secondary'
 
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
