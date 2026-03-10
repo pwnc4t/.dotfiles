@@ -1,0 +1,69 @@
+format = """
+$username$hostname$directory$git_branch$git_status$python$nodejs$java$c$golang$rust$ruby$lua$cmd_duration$line_break$character"""
+
+[username]
+style_user = "bold white"
+style_root = "bold yellow"
+show_always = false
+
+[hostname]
+style = "bold yellow"
+ssh_only = true
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold white"
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+conflicted = "ε"
+ahead = "↑${count}"
+behind = "↓${count}"
+modified = "!${count}"
+untracked = "?${count}"
+staged = "+${count}"
+
+[cmd_duration]
+min_time = 3_000
+format = " took [$duration](bold yellow)"
+
+[character]
+success_symbol = "[❯](bold white)"
+error_symbol = "[❯](bold red)"
+
+# language versions
+[python]
+symbol = " "
+format = '[$symbol$version]($style) '
+
+[nodejs]
+symbol = " "
+format = '[$symbol$version]($style) '
+
+[java]
+symbol = " "
+format = '[$symbol$version]($style) '
+
+[c]
+symbol = " "
+format = '[$symbol$version]($style) '
+
+[golang]
+symbol = " "
+format = '[$symbol$version]($style) '
+
+[rust]
+symbol = " "
+format = '[$symbol$version]($style) '
+
+[ruby]
+symbol = " "
+format = '[$symbol$version]($style) '
+
+[lua]
+symbol = " "
+format = '[$symbol$version]($style) '
