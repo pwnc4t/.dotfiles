@@ -74,6 +74,7 @@ alt-shift-minus = 'move-node-to-workspace 11'
 alt-shift-equal = 'move-node-to-workspace 12'
 cmd-tab = 'workspace-back-and-forth'
 cmd-shift-s = 'mode service'
+cmd-shift-l = 'exec-and-forget open -n /Applications/kitty.app'
 
 [workspace-to-monitor-force-assignment]
 11 = 'secondary'
